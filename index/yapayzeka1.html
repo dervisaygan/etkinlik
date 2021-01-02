@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvarlayalım!</title>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.geri,.ileri{
+    padding:25px 70px;
+    font-size: 35px;
+    background-color: #fff;
+    color:#000;
+    transition: .4s;
+}
+img{
+    width: 100%;
+}
+.geri{
+    position: fixed;
+    top:20px;
+    left:20px;
+}
+.ileri{
+    position: fixed;
+    right: 20px;
+    top:20px;
+}
+.geri:hover{
+    background-color: black;
+    color:#fff;
+}
+.ileri:hover{
+    background-color: black;
+    color:#fff;
+}
+body{
+    background:#000;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ds{
+    width: 60%;
+    font-size: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.dn h3{
+    font-size: 28px;
+}
+.as{
+    width:1000px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="ds dn">
+    <h3>Bu sözler bir bilgisayara ait!</h3>
+    <br>
+    <h3>Bilgisayarlar insanlaşıyor mu?</h3>
+    <br>
+    <video width="320" height="240" controls>
+        <source src="barisozcan.mp4" type="video/mp4" class="as">
+    
+      Your browser does not support the video tag.
+      </video>
+      <h3>Yazan:GPT-3</h3>
+      <br>
+      <a href="../index.html">
+        <button class="ileri">Anasayfaya Dön!</button>
+        </a>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondalık Gösterim</title>
+    <style>
+                *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:pointer;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.flex{
+  
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+a{
+    color:black;
+    text-decoration: none;
+    padding: 60px;
+}
+a:hover{
+    color:#fff;
+}
+input{
+    text-align: center;
+}
+.input{
+    width:200px;
+    height:200px;
+    margin-bottom:20px;
+    margin-top:20px;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+hr{
+    width: 200px;
+    font-weight: 900;
+}
+
+.kazanim-1-1{
+    margin-left: 30px;
+    font-size: 70px;
+}
+.uzun{
+    width: 500px;
+}
+.uret{
+    position: fixed;
+    right: 20px;
+    bottom:20px;
+    margin-right: 30px;
+    width: 200px;
+    height:100px;
+    font-size: 70px;
+    background-color: #fff;
+    color:#000;
+    outline: none;
+    transition: .4s;
+}
+.uret:hover{
+    background-color: #000;
+    color:#fff;
+
+}
+.bolme{
+    position: fixed;
+    left:50px;
+    top:50px;
+
+}
+.bolunen{
+    width: 93px;
+    height: 50px;
+    font-size: 20px;
+}
+#bolme-islemi{
+    position: fixed;
+    left:30px;
+    width:200px
+}
+.bolen{
+    margin-left: 12px;
+    width:70px;
+    height: 40px;
+    font-size: 20px;
+}
+.bolum{
+    position: fixed;
+    top:120px;
+    left:160px;
+    width: 65px;
+    height: 70px;
+    font-size: 20px;
+}
+.kalan{
+    position: fixed;
+    left: 20px;
+    top:220px;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+}
+.hesapla{
+    margin-right: 30px;
+    width: 300px;
+    height:100px;
+    font-size: 70px;
+    background-color: #fff;
+    color:#000;
+    outline: none;
+    transition: .4s;
+    position: fixed;
+    bottom: 20px;
+    right: 300px;
+}
+.hesapla:hover{
+    background-color: #000;
+    color:#fff;
+}
+.ileri:hover{
+    background-color: #000;
+    color:#fff;
+}
+.ileri{
+    width: 300px;
+    height:100px;
+    font-size: 70px;
+    background-color: #fff;
+    color:#000;
+    outline: none;
+    transition: .4s;
+    position: fixed;
+    top:20px;
+    right: 20px;
+}
+.admin{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.anasayfa{
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    position: fixed;
+    top: 20px;
+    left: 60%;
+    font-size: 30px;
+    transition: .4s;
+}
+.anasayfa:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+    </style>
+</head>
+<body class="flex">
+
+    <a href="../index.html"> 
+        <button class="anasayfa"> 
+           
+            Anasayfa
+        
+        
+        </button>
+    </a>
+
+
+    <a href="algoritma.html"> 
+    <button class="ileri"> 
+       
+        İleri
+    
+    
+    </button>
+</a>
+
+
+
+<div class="bolme">
+
+<input type="text" class="bolunen"> <input type="text" class="bolen">
+
+<input type="text" class="bolum">
+<input type="text" class="kalan">
+
+
+<svg id="bolme-islemi" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 225.53"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="cls-1" points="143 0 143 76.04 143 225.53"/><line class="cls-1" x1="143" y1="61.32" x2="242" y2="61.32"/><line class="cls-1" y1="197" x2="135" y2="197"/><line class="cls-1" y1="183.47" x2="22.08" y2="183.47"/></svg>
+</div>
+
+
+<button class="hesapla">Hesapla</button>
+<button class="uret">Üret</button>
+<div class="kazanim-1">
+
+
+
+
+<input type="text" class="input kesir-1">
+<hr>
+<input type="text" class="input kesir-2">
+
+
+</div>
+<div class="kazanim-1-1 flex">
+<p>=</p>
+<input type="text" class="input uzun kazanim-1-1 sonuc">
+</div>
+
+<p class="admin">Muhammet Derviş Aygan tarafından desteklenmektedir.</p>
+<script>
+const bolunen = document.querySelector('.bolunen');
+const bolen = document.querySelector('.bolen');
+const bolum = document.querySelector('.bolum');
+const kalan = document.querySelector('.kalan');
+const kesir1 = document.querySelector('.kesir-1');
+const kesir2 = document.querySelector('.kesir-2');
+const sonuc = document.querySelector('.sonuc');
+const uret = document.querySelector('.uret');
+const hesapla = document.querySelector('.hesapla');
+
+
+uret.addEventListener('click',function(){
+    let zar1= Math.round(Math.random()*550+1);
+    let zar2= Math.round(Math.random()*20+1);
+kesir1.value=zar1
+kesir2.value=zar2
+
+bolunen.value=kesir1.value;
+bolen.value=kesir2.value;
+
+sonuc.value='';
+bolum.value='';
+kalan.value='';
+
+});
+kesir1.addEventListener('keyup',function(){
+    bolunen.value=kesir1.value
+})
+kesir2.addEventListener('keyup',function(){
+    bolen.value=kesir2.value
+})
+
+hesapla.addEventListener('click',function(){
+ var ss = kesir1.value/kesir2.value
+var ds=ss.toFixed(3)
+ sonuc.value=ds;
+
+ var kln = kesir1.value - ss * kesir2.value
+ss = ss.toFixed(3);
+ bolum.value= ss;
+kalan.value = kln;
+
+if(kalan.value<0){
+    kalan.value=0;
+}
+
+
+});
+
+sonuc.addEventListener('click',function(){
+    var cc = kesir1.value/kesir2.value
+   
+   
+    sonuc.value=cc;
+   
+
+   });
+
+
+
+</script>
+</body>
+</html>

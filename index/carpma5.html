@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondalık Gösterim</title>
+    <style>
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+}
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.geri,.ileri{
+    padding:25px 70px;
+    font-size: 35px;
+    background-color: #fff;
+    color:#000;
+    transition: .4s;
+}
+.geri{
+    position: fixed;
+    top:20px;
+    left:20px;
+}
+.ileri{
+    position: fixed;
+    right: 20px;
+    top:20px;
+}
+.geri:hover{
+    background-color: black;
+    color:#fff;
+}
+.ileri:hover{
+    background-color: black;
+    color:#fff;
+}
+.text{
+    font-size: 35px;
+    margin-top: 50px;   
+    text-align: center;
+   
+}
+.ondalik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.input{
+    width: 90px;
+    height: 70px;
+    margin-right: 20px;
+    font-size: 35px;
+    padding: 0px;
+    text-align: center;
+    outline: none;
+}
+.virgul{
+    font-size: 75px;
+}
+.ml{
+    margin-left: 20px;
+}
+.cozumle{
+    padding: 20px;
+    font-size: 60px;
+    background-color: #fff;
+    transition: .4s;
+}
+.cozumle:hover{
+    background-color: #000;
+    color:#fff
+}
+.sonuc{
+    position: fixed;
+    top:350px;
+    left:550px;
+    font-size: 35px;
+    width:200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.anasayfa{
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    position: fixed;
+    top: 20px;
+    left: 70%;
+    font-size: 28px;
+    transition: .4s;
+}
+.anasayfa:hover{
+    background-color: #000;
+    color: #fff;
+}
+.a{
+width:100px;
+height: auto;
+}
+.inputs{
+width: 100px;
+height: 50px;
+font-size: 35px;
+
+}
+.mb{
+    margin-bottom: 10px;
+}
+.mt{
+margin-top:10px;
+}
+.mr{
+margin-right:25px;
+}
+.sonuc2{
+
+    font-size: 35px;
+}
+    </style>
+</head>
+<body>
+    
+    <a href="../index.html"> 
+        <button class="anasayfa"> 
+           
+            Anasayfa
+        
+        
+        </button>
+    </a>
+    
+    <a href="carpma4.html"> 
+        <button class="geri"> 
+           
+            Geri
+        
+        
+        </button>
+    </a> 
+    <p class="text">İŞLEM FABRİKASI</p>
+    <a href="etkinlik.html"> 
+        <button class="ileri"> 
+           
+            İleri
+        
+        
+        </button>
+    </a>
+
+<div class="ondalik">   
+
+
+<select class="input in1">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+<select class="input in2 ml">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+<p class="virgul">
+    x
+    
+    
+    </p>
+<select class="input in3 ml">
+<option value="0">0</option>
+
+</select>
+<p class="virgul">
+    ,
+    
+    
+    </p>
+
+<select class="input in4 ml">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+
+
+
+<button class="carp cozumle">
+    
+    Çarp!
+
+</button>
+<button class="uret cozumle" style="margin-left: 20px;">
+    
+    Üret
+
+</button>
+
+</div>
+
+
+<div class="sonuc">
+
+
+
+
+
+
+</div>
+<div class="sonuc2">
+
+
+
+
+
+
+</div>
+
+
+<p class="admin">Muhammet Derviş Aygan tarafından desteklenmektedir.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var uret = document.querySelector('.uret');
+var in1 = document.querySelector('.in1');
+var in2 = document.querySelector('.in2');
+var in3 = document.querySelector('.in3');
+var in4 = document.querySelector('.in4');
+var carp = document.querySelector('.carp');
+var sonuc = document.querySelector('.sonuc');
+var sonuc2 = document.querySelector('.sonuc2');
+
+
+uret.addEventListener('click',function(){
+    sonuc.innerHTML='';
+    sonuc2.innerHTML='';
+    var zar1= Math.floor(Math.random()*10);
+    var zar2= Math.floor(Math.random()*10);
+
+    var zar4= Math.floor(Math.random()*10);
+    var zar5= Math.floor(Math.random()*10);
+
+in1.value= zar1;
+in2.value= zar2;
+in3.value= 0;
+in4.value= zar4;
+ 
+    })
+carp.addEventListener('click',function(){
+
+    sonuc.innerHTML='';
+    sonuc2.innerHTML='';
+    var o1= Number(in1.value+'.'+in2.value)
+    var o2= Number(in3.value+'.'+in4.value)
+
+  
+    sonuc.innerHTML=`
+    <div class="a">
+<input type="text" class="inputs mb ic1">
+
+</div>
+    <p class="ml mr">x</p>
+    <div class="a">
+<input type="text" class="inputs mb ic3">
+<hr>
+<input type="text" class="inputs mt  ic4">
+</div>
+<p class="ml mr">=</p>
+<div class="a">
+<input type="text" class="inputs mb ic5" style="padding-top:35px;border:none;height:90px">
+
+    <br><br>`;
+ 
+    var ic1= document.querySelector('.ic1');
+    var ic3= document.querySelector('.ic3');
+    var ic4= document.querySelector('.ic4');
+    var ic5= document.querySelector('.ic5');
+
+    var ks1= Number(in1.value+in2.value)
+    var ks2= Number(in3.value+in4.value)
+
+    
+    ic1.value= ks1;
+    ic3.value= ks2;
+    ic4.value= 10;
+    var ks3= Number(ks1*Number(ks2)/10)
+    ic5.value= ks3;
+   
+
+    })
+
+
+
+</script>
+</body>
+</html>

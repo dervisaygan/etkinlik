@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvarlayalım!</title>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.geri,.ileri{
+    padding:25px 70px;
+    font-size: 35px;
+    background-color: #fff;
+    color:#000;
+    transition: .4s;
+}
+img{
+    width: 100%;
+}
+.geri{
+    position: fixed;
+    top:20px;
+    left:20px;
+}
+.ileri{
+    position: fixed;
+    right: 20px;
+    top:20px;
+}
+.geri:hover{
+    background-color: black;
+    color:#fff;
+}
+.ileri:hover{
+    background-color: black;
+    color:#fff;
+}
+body{
+    background:#000;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ds{
+    margin-top:120px;
+    width: 45%;
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.n{
+    height:100%;
+    width:10px;
+    background-color:blue;
+}
+.ds ol{
+    margin-left: 40px;
+}
+.g1{
+    padding:20px 50px;
+    font-size: 21px;
+    background-color: black;
+    color:#fff;
+}
+.den{
+    font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="ds al1">
+    <h3>Rastgele sayı üretme algoritması</h3>
+
+    
+   <ol style="background-color: #fff;">
+       <li>Math.random() komutu ile 0 ila 1 arası bir ondalıklı sayı üretilsin.</li>
+       <hr>
+       <li>Üretilen bu sayı Math.ceil() komutu ile aşağı onluğa yuvarlansın ve 0 ila 9 arası üretmeye başlasın.</li>
+       <hr>
+       <li>Daha sonra rasgele sayı üreten algoritma çoğaltılsın ve üst kısımdaki kutucuklara o değerler atansın.</li>
+       <hr>
+       <li>Üret butonuna tıklandığında bir algoritma çalışsın.</li>
+       <hr>
+       <li>Üretilen sayı 10 ile çarpılarak 0 ila 10 bir ondalıklı sayı elde edilsin.</li>
+
+   </ol>
+
+
+
+</div>
+<div class="n"></div>
+<div class="ds al2">
+    <h3>Yuvarlama Algoritması</h3>
+
+    
+   <ol style="background-color: #fff;" class="den">
+       <li>Yuvarla butonuna tıklandığında bir algoritma çalışsın.</li>
+       <hr>
+       <li>Bulunan sonuçlar kullanıcının anlayabileceği şekilde aşağı kısıma metin olarak yazılsın.</li>
+       <hr>
+       <li>Aynı algoritma yüzde birler basamağı için çalışsın.</li>
+       <hr>
+       <li>Ortaya çıkan ondalıklı sayının yüzdebirler basamağı 5 ve 5 in üstünde bir rakamsa yukarı onluğa, 5 in aşşağısı bir rakam ise aşağı onluğa yuvarlasın.</li>
+       <hr>
+       <li>Bu rakamları yan yana eklesin ve bu eklediği rakamları Number(Number(tam),Number(tamdegil)) şeklinde bir ondalıklı sayıya çevirsin.</li>
+       <hr>
+       <li>Algoritma kutucuklara atanan sayıları tarayıcının anlayabilmesi için Number(kutucuk1) şeklinde rakamlara çevirsin.</li>
+    
+   
+   </ol>
+
+
+
+</div>
+
+
+
+    
+<a href="index5.html">
+<button class="geri">Geri</button>
+</a>
+
+
+<a href="carpma.html">
+<button class="ileri">İleri</button>
+</a>
+<script>
+document.querySelector('.al1').addEventListener('click',function(){
+    document.querySelector('.al1').innerHTML=`
+    Sıralama:4-1-5-2-3
+
+    `
+    
+})
+document.querySelector('.al2').addEventListener('click',function(){
+    document.querySelector('.al2').innerHTML=`
+    Sıralama:1-6-5-4-2
+
+    `
+    
+})
+
+</script>
+
+</body>
+</html>

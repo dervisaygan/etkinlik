@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvarlayalım!</title>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.geri,.ileri{
+    padding:25px 70px;
+    font-size: 35px;
+    background-color: #fff;
+    color:#000;
+    transition: .4s;
+}
+.geri{
+    position: fixed;
+    top:20px;
+    left:20px;
+}
+.ileri{
+    position: fixed;
+    right: 20px;
+    top:20px;
+}
+.geri:hover{
+    background-color: black;
+    color:#fff;
+}
+.ileri:hover{
+    background-color: black;
+    color:#fff;
+}
+body{
+    background-image: url("pi-sayısı.jpg");
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ds{
+    width: 60%;
+    font-size: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="ds">
+    <h1>Ondalıklı Sayıları Neden Yuvarlamalıyız?</h1>
+    <br>
+    <h3>Hangi Sayı İle İşlem Yapmak Daha Kolay?</h3>
+    <br>
+    <h3> A) 3,14</h3>
+    <br>
+    <h3> B) 3,1415926535897932384626433832</h3>
+
+
+
+</div>
+
+
+
+    
+<a href="index2.html">
+<button class="geri">Geri</button>
+</a>
+
+
+<a href="index4.html">
+<button class="ileri">İleri</button>
+</a>
+</body>
+</html>

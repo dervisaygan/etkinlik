@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 75%;
+    height: 92vh;
+    margin-right: 2%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    padding: 25px;
+    font-size: 25px;
+}
+nav{
+    width: 20%;
+    height: 92vh;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    border-radius: 20px;
+}
+.bt{
+    width: 100%;
+    padding: 30px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: transparent;
+    border-top: 2px solid transparent;
+    transition: .2s;
+}
+.tt{
+    width: 100%; 
+}
+.bt:hover{
+    box-shadow:
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 30px 33.4px rgba(0, 0, 0, 0.086),
+    0 10px 10px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    border-top: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.main-item{
+text-align: center;
+width: 30%;
+padding: 50px;
+height: 270px; 
+transition: .4s;  
+border-radius: 9px;
+display: inline-block;
+animation-name: example;
+animation-duration: 1.6s;
+}
+@keyframes example {
+    0%   {height: 0px;opacity: 0;}
+    100% {height: 270px;opacity: 1;}
+  }
+.go{
+    width: 100%;
+    padding: 30px;  
+    outline: none;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+}
+.go:hover {
+    cursor: pointer;
+
+}
+.mb{
+    margin-bottom: 15px;
+}
+.ml{
+    margin-left: 10px;
+}
+.main-item:hover{
+cursor: pointer;
+background-color: #f3f3f3;
+}
+.mavi{
+    border: 2px solid #053C7D;
+    color:#053C7D;
+}
+.mavi button{
+    color:#053C7D;
+}
+.sari{
+    border: 2px solid green;
+    color:green;
+}
+.sari button{
+    color:green;
+}
+
+.red{
+    border: 2px solid red;
+    color:red;
+}
+.red button{
+    color:red;
+}
+.mor{
+    border: 2px solid #c315c9;
+    color: #c315c9;
+}
+.mor button{
+    color: #c315c9;
+}
+.turuncu{
+    border: 2px solid #ffbb00;
+    color: #ffbb00;
+}
+.turuncu button{
+    color: #ffbb00;
+}
+.pembe{
+    border: 2px solid #ff00d4;
+    color: #ff00d4;
+}
+.pembe button{
+    color: #ff00d4;
+}
+.admin{
+    position: fixed;
+    bottom: 35px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: .6s;
+}
+nav:hover .admin{
+opacity: 1;
+}
+.ib{
+    display: inline-block;
+}
+.event{
+    padding: 20px;
+    border: 1px solid #053C7D;
+    border-radius: 20px;
+    width: 100%;
+}
+.event:hover{
+    cursor: pointer;
+}
+.bb{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: #fff;
+    outline: none;
+    border-color: #000;
+    transition: .4s;
+}
+.bb:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.onceki,.sonraki{
+    width: 100%;
+    padding: 30px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: transparent;
+    border-top: 2px solid transparent;
+    transition: .2s;
+}
+
+.onceki:hover{
+    box-shadow:
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 30px 33.4px rgba(0, 0, 0, 0.086),
+    0 10px 10px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    border-top: 2px solid rgba(0, 0, 0, 0.12);
+}
+.sonraki:hover{
+    box-shadow:
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 3px 3px rgba(0, 0, 0, 0.12),
+    0 30px 33.4px rgba(0, 0, 0, 0.086),
+    0 10px 10px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    border-top: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+
+
+
