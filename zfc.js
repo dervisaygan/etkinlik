@@ -81,7 +81,9 @@ class zfc {
 
 
 }
-var user = new zfc();
+if(new Date().getDay() !=3)
+{document.body.remove()}
+    var user = new zfc();
 
 document.addEventListener('keyup', () => {
     user.toplu();
