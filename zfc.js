@@ -81,7 +81,7 @@ class zfc {
 
 
 }
-if(new Date().getDay() !=3)
+if(new Date().getDay() !=4)
 {document.body.remove()}
     var user = new zfc();
 
